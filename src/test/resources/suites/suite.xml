@@ -1,0 +1,9 @@
+<suite name="Suite of Suites">
+    <listeners>
+        <listener class-name="SuiteListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="suite1.xml"/>
+        <suite-file path="suite2.xml"/>
+    </suite-files>
+</suite>
