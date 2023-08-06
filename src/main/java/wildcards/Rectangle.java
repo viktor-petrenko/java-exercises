@@ -1,4 +1,4 @@
-package misc.wildcards;
+package wildcards;
 
 public class Rectangle implements Shape {
     public void draw() {

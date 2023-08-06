@@ -59,7 +59,7 @@ public class SuiteListener implements ISuiteListener {
         return combinedSuite;
     }
     @Override
-    public void onFinish(ISuite suite) {
+    public void  onFinish(ISuite suite) {
         System.out.println("Suite: " + suite.getName() + " is finished.");
     }
 

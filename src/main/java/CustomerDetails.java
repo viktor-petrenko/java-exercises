@@ -1,6 +1,3 @@
-package misc;
-
-
 public class CustomerDetails {
     private String name;
     private String lastname;

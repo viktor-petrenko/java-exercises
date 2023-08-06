@@ -20,7 +20,6 @@ import java.util.List;
 import java.util.Map;
 
 public class AlterSuiteListener implements IAlterSuiteListener {
-    private List<XmlSuite> allSuites = new ArrayList<>();
 
     @Override
     public void alter(List<XmlSuite> suites) {

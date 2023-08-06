@@ -1,6 +1,6 @@
-package misc.queue;
+package queue;
 
-import misc.queue.Person;
+import misc.Person;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

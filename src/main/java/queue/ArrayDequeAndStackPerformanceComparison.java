@@ -1,13 +1,15 @@
-package misc.queue;
+package queue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
 
 public class ArrayDequeAndStackPerformanceComparison {
+    // ArrayDeque is not sync
+    // use ConcurrentLinkedDeque  if needed
     public static void main(String[] args) {
         /*
-        In this article we are going to compare ArrayDeques and Stacks.
+        In this  we are going to compare ArrayDeques and Stacks.
         Out aim is to implement a LIFO structure in the most efficient manner.
         So this is why we are going to measure the running time of the approaches.
         First let's consider ArrayDeques:
@@ -37,5 +39,9 @@ public class ArrayDequeAndStackPerformanceComparison {
 
         System.out.println("Time taken with Stack: " + (System.currentTimeMillis() - now) + "ms");
 
+       // CONCLUSION: because Stack is synchronized
+        // (because it extends the Vector class)
+        // this is why it is going to be slower than the ArrayDeque solution.
+        // So it is advisable to use ArrayDeque if we are after a LIFO structure.
     }
 }

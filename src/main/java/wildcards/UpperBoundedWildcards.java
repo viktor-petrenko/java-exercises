@@ -1,4 +1,4 @@
-package misc.wildcards;
+package wildcards;
 
 import java.util.ArrayList;
 import java.util.Arrays;

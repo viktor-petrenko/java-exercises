@@ -1,4 +1,4 @@
-package misc.generics;
+package generics;
 
 public class GenericsTypeBound {
     /**

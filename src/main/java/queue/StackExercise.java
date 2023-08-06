@@ -1,4 +1,4 @@
-package misc.queue;
+package queue;
 
 import java.util.Stack;
 
