@@ -41,6 +41,7 @@ public class Person implements Comparable<Person> {
 
     // 1) if two object are equal then they must have the same hash code
     // 2) if two objects have the same hash code they may or may not be equal
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
