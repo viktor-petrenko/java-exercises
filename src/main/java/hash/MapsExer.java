@@ -1,6 +1,7 @@
 package hash;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class MapsExer {
@@ -29,6 +30,22 @@ public class MapsExer {
 
         for (Map.Entry<Integer, String> entry : map.entrySet()){
             System.out.println(entry.getKey() + " - " + entry.getValue());
+        }
+
+        // Map<String, Integer> map1= new HashMap<>(); <- ignores order
+        // if order is important please use linkedhashmap but needs more memory
+
+        Map<String, Integer> map1= new LinkedHashMap<>();
+        map1.put("aaa",1);
+        map1.put("bbb",2);
+        map1.put("ccc",3);
+        map1.put("ddd",4);
+        map1.put("eee",5);
+        map1.put("fff",6);
+        map1.put("ggg",7);
+
+        for (String key : map1.keySet()) {
+            System.out.println(map1.get(key));
         }
     }
 }
