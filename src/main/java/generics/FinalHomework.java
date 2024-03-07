@@ -6,7 +6,6 @@ public class FinalHomework {
 
 
     public void runExercise() {
-        // you have to implement the other classes such that the following code can run without any error
         Library<Algorithm> library = new Library<>();
         library.add(new SearchAlgorithm());
         library.add(new SortingAlgorithm());

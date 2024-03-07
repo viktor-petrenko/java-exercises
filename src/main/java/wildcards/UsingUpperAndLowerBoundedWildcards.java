@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UsingUpperAndLowerBoundedWildcards {
 
-    /*In the previous lectures we have discussed wildcards -
+    /*
     both upper bounded and lower bounded wildcards.
         In this exercise, your task is to implement copy method
             (it is present in Collections by the way)
@@ -17,7 +17,7 @@ public class UsingUpperAndLowerBoundedWildcards {
 
     Hint: you have to copy the items from one of the lists into another list (so there are read and write operations accordingly).
 
-    Good luck!*/
+    */
     /*public static <T> void copy(List<? extends T> source, List<? super T> destination) {
         destination.addAll(source);
     }*/

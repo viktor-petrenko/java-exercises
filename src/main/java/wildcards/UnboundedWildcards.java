@@ -1,5 +1,8 @@
 package wildcards;
 
+import wildcards.misc.Rectangle;
+import wildcards.misc.Shape;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

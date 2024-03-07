@@ -1,4 +1,4 @@
-package wildcards;
+package wildcards.misc;
 
 public class Circle  implements Shape {
     public void draw() {
