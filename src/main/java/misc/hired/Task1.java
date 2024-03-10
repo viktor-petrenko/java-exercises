@@ -15,51 +15,34 @@ Explanation :  11 is the maximum profit you can make buying the stock when it's 
 public static long solution(long[] prices) {
 }
  */
-class Job {
-    int start;
-    int end;
-    int load;
 
-    Job(long[] arr) throws IllegalArgumentException {
-        if (arr.length != 3 || arr[0] < 0 || arr[1] <= arr[0] || arr[2] < 0) {
-            throw new IllegalArgumentException("Invalid job data");
-        }
-        this.start = (int) arr[0];
-        this.end = (int) arr[1];
-        this.load = (int) arr[2];
+class Task1 {
+
+    public static void main(String[] args) {
+        long[] prices = {6, 0, -1, 10};
+        System.out.println(solution(prices));
     }
-}
 
-class Solution {
-    public static long solution(long[][] jobValues) {
-        try {
-            Job[] jobs = Arrays.stream(jobValues)
-                    .map(Job::new)
-                    .toArray(Job[]::new);
-
-            int maxEndTime = Arrays.stream(jobs)
-                    .mapToInt(job -> job.end)
-                    .max()
-                    .orElse(0);
-
-            if (maxEndTime == 0) {
-                return -1; // Indicates invalid input or no jobs
-            }
-
-            int[] cpuTimeline = new int[maxEndTime + 1];
-            Arrays.fill(cpuTimeline, 0);
-
-            for (Job job : jobs) {
-                for (int i = job.start; i < job.end; i++) {
-                    cpuTimeline[i] += job.load;
-                }
-            }
-
-            return Arrays.stream(cpuTimeline)
-                    .max()
-                    .orElse(0);
-        } catch (IllegalArgumentException e) {
-            return -1; // Return -1 to indicate invalid input
+    public static long solution(long[] prices) {
+        if (prices == null || prices.length == 0) {
+            return 0; // If the list is empty, return 0 as specified.
         }
+
+        long minPrice = Long.MAX_VALUE; // Initialize minPrice to the maximum value possible.
+        long maxProfit = 0; // Initialize maxProfit to 0.
+
+        for (int i = 0; i < prices.length; i++) {
+            // If the current price is less than minPrice, update minPrice.
+            if (prices[i] < minPrice) {
+                minPrice = prices[i];
+            } else if (prices[i] - minPrice > maxProfit) {
+                // If the profit from selling at the current price is greater than maxProfit, update it.
+                maxProfit = prices[i] - minPrice;
+            }
+        }
+
+        return maxProfit;
     }
+
+
 }
