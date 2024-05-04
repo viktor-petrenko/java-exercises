@@ -1,0 +1,30 @@
+SELECT DISTINCT city
+FROM customer
+ORDER BY city ASC;
+
+/**
+This query:
+
+    Selects the first_name and last_name columns from the employees table.
+    Filters the rows using the WHERE clause to include only those where last_name is between "Hall" and "Reed", inclusive.
+    Sorts the results by last_name in ascending order, as specified.
+*/
+SELECT first_name, last_name
+FROM employees
+WHERE last_name BETWEEN 'Hall' AND 'Reed'
+ORDER BY last_name ASC;
+
+/**
+This query operates as follows:
+
+    The subquery (SELECT customer_id FROM purchase_order) retrieves all customer IDs that have made at least one purchase order.
+    The main query selects the customer_id from the customer table where the customer_id is not in the list obtained from the subquery.
+    This ensures that only customers without any purchase orders are selected.
+*/
+
+SELECT customer_id
+FROM customer
+WHERE customer_id NOT IN (
+    SELECT customer_id
+    FROM purchase_order
+)
