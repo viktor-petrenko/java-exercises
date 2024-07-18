@@ -30,6 +30,8 @@
         <maven-site-plugin>4.0.0-M1</maven-site-plugin>
         <maven-project-info-reports-plugin>3.3.0</maven-project-info-reports-plugin>
         <classmate>1.3.1</classmate>
+        <log4j-api>2.13.3</log4j-api>
+        <log4j-core>2.13.2</log4j-core>
         <jacksondatabind>2.13.4</jacksondatabind>
     </properties>
 
