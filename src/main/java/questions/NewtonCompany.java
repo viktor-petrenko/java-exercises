@@ -3,19 +3,6 @@ package questions;
 import java.util.*;
 
 /*
- * Click Run to execute the snippet below!
- */
-
-import java.io.*;
-import java.util.*;
-
-/*
- * To execute Java, please define "static void main" on a class
- * named Solution.
- *
- * If you need more classes, simply define them inline.
-
-1.
  Write a function to return the string that appears the maximum number of times.
 - Assume only one string will have max count.
 Input: ["owl", "eagle", "eagle", "hummingbird", "hummingbird", "eagle", "hummingbird"]
