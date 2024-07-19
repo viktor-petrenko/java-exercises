@@ -1,6 +1,6 @@
 package misc.coderpad;
 
-class FindTempCloserToZero  {
+class FindTempCloserToZero {
     public static int computeClosestToZero(int[] ts) {
         if (ts == null || ts.length == 0) {
             return 0;

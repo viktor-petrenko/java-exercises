@@ -2,7 +2,7 @@ public class NewThread_ExtendThread extends Thread {
 
     NewThread_ExtendThread() {
         super("Demo поток");
-        System.out.println("Child: " );
+        System.out.println("Child: ");
         start();
     }
 
@@ -24,7 +24,7 @@ public class NewThread_ExtendThread extends Thread {
             new NewThread_ExtendThread();
 
             try {
-                for(int i = 5; i > 0; i--){
+                for (int i = 5; i > 0; i--) {
                     System.out.println("Mainк: " + i);
                     Thread.sleep(1000);
                 }

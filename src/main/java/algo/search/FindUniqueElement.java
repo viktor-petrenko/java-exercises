@@ -28,7 +28,7 @@ public class FindUniqueElement {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2, 3, 4, 2, 3, 4, 5};
+        int[] nums = {2, 5, 3, 4, 2, 3, 4, 0};
         int unique = findUnique(nums);
         System.out.println("The unique element is: " + unique); // Output: The unique element is: 5
     }

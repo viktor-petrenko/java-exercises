@@ -10,21 +10,20 @@ public class QueueExercise {
 
     /**
      * We insert items in the end of the queue and items are removed from the beginning of the queue
-     *
+     * <p>
      * FIFO STRUCTURE -> FIRST IN FIRST OUT
-     *
+     * <p>
      * WE insert items here + get items here <--> | Stack
      * WE insert items here -> | QUEUE | -> we get the items here
-     *
+     * <p>
      * java.utl.LinkedList
      * java.util.PriorityQueue -> PriorityQueue stores its elements internally according to their natural order
-     *              (if they implement comparable)
-     *
+     * (if they implement comparable)
+     * <p>
      * add() -> we add items to our queue
-     *
+     * <p>
      * element() -> approximetely the same as peel(); we git first without removing it
      * remove() -> this method removes the element at the head of the queue
-     *
      *
      * @param args
      */
@@ -40,7 +39,7 @@ public class QueueExercise {
         System.out.println("Remove item: " + queue.remove());
         System.out.println("Check 1 item: " + queue.element());
 
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             System.out.println(queue.remove());
         }
 
@@ -49,7 +48,7 @@ public class QueueExercise {
         personsQueue.add(new Person("Agga", 55));
         personsQueue.add(new Person("Anna", 22));
 
-        while (!personsQueue.isEmpty()){
+        while (!personsQueue.isEmpty()) {
             System.out.println(personsQueue.poll());
         }
     }

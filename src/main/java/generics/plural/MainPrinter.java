@@ -8,6 +8,6 @@ public class MainPrinter {
 
     public static void main(String[] args) {
         Printer<BWCartridge> prnter = new Printer<BWCartridge>(true, "My PRINTER", new BWCartridge());
-  prnter.print(1);
+        prnter.print(1);
     }
 }

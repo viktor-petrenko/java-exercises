@@ -37,6 +37,7 @@ public class SuiteListener implements ISuiteListener {
 
         printPrettyXmlSuite2(combinedSuite);
     }
+
     private XmlSuite combineSuites(List<XmlSuite> suites) {
         XmlSuite combinedSuite = new XmlSuite();
         combinedSuite.setName("Combined Suite");
@@ -58,8 +59,9 @@ public class SuiteListener implements ISuiteListener {
 
         return combinedSuite;
     }
+
     @Override
-    public void  onFinish(ISuite suite) {
+    public void onFinish(ISuite suite) {
         System.out.println("Suite: " + suite.getName() + " is finished.");
     }
 
@@ -162,6 +164,7 @@ public class SuiteListener implements ISuiteListener {
 
         return testElement;
     }
+
     private Element createSuiteElement(Document document, XmlSuite xmlSuite) {
         Element suiteElement = document.createElement("suite");
         suiteElement.setAttribute("name", xmlSuite.getName());

@@ -17,7 +17,7 @@ public class DequeExercises {
         queue.offer(100);
         queue.offer(1000);
 
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             System.out.println(queue.poll());
             // Retrieves and removes the head of the queue
         }
@@ -31,7 +31,7 @@ public class DequeExercises {
         stack.push(100);
         stack.push(1000);
 
-        while (!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             System.out.println(stack.pop());
             //  removes and returns the first element of this deque.
         }

@@ -4,22 +4,22 @@ import java.io.Serializable;
 
 public class TypeErasure {
     /**
-     *      In order to implement generics, Java uses type erasure
+     * In order to implement generics, Java uses type erasure
      * this is how generic Java code is handled.
-     *      - replace all type parameters in generic types with their bounds or Object
+     * - replace all type parameters in generic types with their bounds or Object
      * if the type parameters are unbounded
-     *      - uses type casts if necessary
-     *      - sometimes it generates extra methods : the so called bridge methodss
+     * - uses type casts if necessary
+     * - sometimes it generates extra methods : the so called bridge methodss
      * in order to maintain polymorphism with generic types
-     *
-     *      In the bytecode the following code is equivalent
-     *      List<Integer> list = new ArrayList();
-     *      list.add(3);
-     *      Integer num = list.get(0);
-     *      -------------------------------------
-     *      List list = new ArrayList<>();
-     *      list.add(3);
-     *      Integer num = (Integer) list.get(0);
+     * <p>
+     * In the bytecode the following code is equivalent
+     * List<Integer> list = new ArrayList();
+     * list.add(3);
+     * Integer num = list.get(0);
+     * -------------------------------------
+     * List list = new ArrayList<>();
+     * list.add(3);
+     * Integer num = (Integer) list.get(0);
      *
      * @param args
      */

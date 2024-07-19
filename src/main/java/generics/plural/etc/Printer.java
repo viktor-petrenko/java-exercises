@@ -19,7 +19,7 @@ public class Printer<T> implements IMachine {
     }
 
     public void print(int copies) {
-        System.out.println(cartridge.toString() );
+        System.out.println(cartridge.toString());
         String onStatue = "";
         if (machine.isOn) {
             onStatue = " is On!";
@@ -28,7 +28,7 @@ public class Printer<T> implements IMachine {
         }
 
         String textToPrint = modelNumber + onStatue;
-        while(copies > 0 && !paperTray.isEmpty()){
+        while (copies > 0 && !paperTray.isEmpty()) {
             System.out.println(textToPrint);
             copies--;
             paperTray.usePage();

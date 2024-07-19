@@ -2,12 +2,11 @@ package generics;
 
 public class GenericsTypeBound {
     /**
-     *
-     *     It is misleading because no matter we are dealing with classes
-     *     or interfaces - we have to use the extends keyword
-     *     and we can define multiple bounds.
-     *
-     *    <T extends B1 & B2 & B3>
+     * It is misleading because no matter we are dealing with classes
+     * or interfaces - we have to use the extends keyword
+     * and we can define multiple bounds.
+     * <p>
+     * <T extends B1 & B2 & B3>
      */
     public static <T extends Comparable<T>> T calculateMin(T num1, T num2) {
         if (num1.compareTo(num2) < 0) return num1;

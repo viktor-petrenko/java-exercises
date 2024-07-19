@@ -2,7 +2,7 @@ package misc.coderpad;
 
 import java.util.Arrays;
 
-class findValueInArray  {
+class findValueInArray {
 
     static boolean exists(int[] ints, int k) {
         // Using Arrays.binarySearch to perform binary search

@@ -6,11 +6,11 @@ import java.util.List;
 
 public class LinkedListExercise {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
         long startTimeArrayList = System.currentTimeMillis();
 
-        for (int i = 0; i< 500000; ++i){
+        for (int i = 0; i < 500000; ++i) {
             arrayList.add(0, i);
         }
 
@@ -19,12 +19,11 @@ public class LinkedListExercise {
         LinkedList<Integer> linkedList = new LinkedList<>();
         long startTimeLinkedList = System.currentTimeMillis();
 
-        for (int i = 0; i< 500000; ++i){
+        for (int i = 0; i < 500000; ++i) {
             linkedList.addFirst(i);
         }
 
         System.out.println("Time taken for LinkedList: " + (System.currentTimeMillis() - startTimeLinkedList));
-
 
 
         List<Integer> list = new LinkedList<>();

@@ -9,14 +9,14 @@ public class Battleship {
         int columns = 5;
         int[][] matrix = new int[rows][columns];
 
-        System.out.println(getHitProbability(rows,columns, matrix));
+        System.out.println(getHitProbability(rows, columns, matrix));
     }
 
     public static double getHitProbability(int R, int C, int[][] G) {
         // Write any import statements here
 
-        for (int[] row: G)
-            Arrays.fill(row,  ThreadLocalRandom.current().nextInt(0, 2));
+        for (int[] row : G)
+            Arrays.fill(row, ThreadLocalRandom.current().nextInt(0, 2));
 
         System.out.println(Arrays.deepToString(G));
 

@@ -39,7 +39,7 @@ public class ArrayDequeAndStackPerformanceComparison {
 
         System.out.println("Time taken with Stack: " + (System.currentTimeMillis() - now) + "ms");
 
-       // CONCLUSION: because Stack is synchronized
+        // CONCLUSION: because Stack is synchronized
         // (because it extends the Vector class)
         // this is why it is going to be slower than the ArrayDeque solution.
         // So it is advisable to use ArrayDeque if we are after a LIFO structure.

@@ -5,8 +5,9 @@ import java.util.Arrays;
 public class Cafeteria {
 
     public static void main(String[] args) {
-        getMaxAdditionalDinersCount(10, 1, 2, new long[]{6, 2 });
+        getMaxAdditionalDinersCount(10, 1, 2, new long[]{6, 2});
     }
+
     public static long getMaxAdditionalDinersCount(long N, long K, int M, long[] S) {
 
         long seats = N;
@@ -15,12 +16,12 @@ public class Cafeteria {
 
         Arrays.sort(S);
 
-        if(M >= 0){
+        if (M >= 0) {
             return 1;
         }
 
         long totalAmountOfSeatsAvailable;
-        for(long i=0;i<S.length;i++){
+        for (long i = 0; i < S.length; i++) {
 
 
         }

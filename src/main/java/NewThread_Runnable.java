@@ -25,7 +25,7 @@ public class NewThread_Runnable implements Runnable {
             new NewThread_Runnable();
 
             try {
-                for(int i = 5; i > 0; i--){
+                for (int i = 5; i > 0; i--) {
                     System.out.println("Main поток: " + i);
                     Thread.sleep(1000);
                 }

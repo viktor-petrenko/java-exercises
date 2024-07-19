@@ -6,7 +6,7 @@ public class PaperTray {
         return false;
     }
 
-    public void usePage(){
+    public void usePage() {
         System.out.println("PAge Used !");
     }
 }
