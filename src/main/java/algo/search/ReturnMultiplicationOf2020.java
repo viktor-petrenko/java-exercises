@@ -16,11 +16,12 @@ public class ReturnMultiplicationOf2020 {
             for (int n = 0; i < list.size(); i++) {
                 System.out.println("inner loop i '" + list.get(i) + "'");
                 System.out.println("inner loop n '" + list.get(n) + "'");
-                int result = list.get(n) + list.get(i);
-                if (result == 2020) {
-                    System.out.println("Result " + " " + list.get(n) + " + " + list.get(i) + "=" + result);
-                    System.out.println("Result " + " " + list.get(n) + " * " + list.get(i) + "=" + list.get(n) * list.get(i));
-                    return result;
+                int multiplication  = list.get(n) * list.get(i);
+
+                if (list.get(n) + list.get(i) == 2020) {
+                    System.out.println("Result " + " " + list.get(n) + " + " + list.get(i) + "=" + list.get(n) + list.get(i));
+                    System.out.println("Result " + " " + list.get(n) + " * " + list.get(i) + "=" + multiplication);
+                    return multiplication;
                 }
             }
         }
