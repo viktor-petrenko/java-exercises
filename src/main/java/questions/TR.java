@@ -36,14 +36,13 @@ public class TR {
         }
     }
 
-    /**
-     * *
-     * **
-     * ***
-     * **
-     * *
-     *
-     * @param rows
+    /*
+      *
+      **
+      ***
+      **
+      *
+
      */
 
     private static void horizontalFullTreeToTheLeft(int rows) {
@@ -75,11 +74,13 @@ public class TR {
     }
 
 
-    /**
-     * ***
-     * **
-     * *
-     */
+    /*
+
+      ****
+       ***
+        **
+         *
+    */
     private static void leftSideUpsideDownTree(int rows) {
         for (int i = rows; i >= 1; i--) { // Outer loop for the rows (reverse)
             // Inner loop for stars
@@ -90,10 +91,12 @@ public class TR {
         }
     }
 
-    /**
-     * ***
-     * **
-     * *
+    /*
+      ****
+      ***
+      **
+      *
+
      */
     private static void rightTreeUpSideDown(int rows) {
         for (int i = rows; i >= 1; i--) { // Outer loop for the rows (reverse)
@@ -109,10 +112,12 @@ public class TR {
         }
     }
 
-    /**
-     * ******
-     * ***
-     * *
+    /*
+      ******
+      ***
+      **
+      *
+
      */
     private static void upsidedownTree(int rows) {
         for (int i = rows; i >= 1; i--) { // Outer loop for the rows (reverse)
@@ -132,10 +137,11 @@ public class TR {
         }
     }
 
-    /**
-     * *
-     * ***
-     * *****
+    /*
+      *
+      **
+      ***
+      *****
      */
 
     private static void fullsizeTree(int rows) {
@@ -156,10 +162,11 @@ public class TR {
         }
     }
 
-    /**
-     * *
-     * **
-     * ***
+    /*
+     *
+     **
+     ***
+
      */
     private static void leftSideTree(int rows) {
 
@@ -176,10 +183,12 @@ public class TR {
         }
     }
 
-    /**
-     * *
-     * **
-     * ***
+    /*
+
+     *
+     **
+     ***
+     ****
      */
 
     private static void rightSideHalfTree(int rows) {
