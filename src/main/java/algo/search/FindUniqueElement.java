@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class FindUniqueElement {
     public static int findUnique(int[] nums) {
-        Arrays.sort(nums); // Ensure the array is sorted
-        int left = 0, right = nums.length - 1;
+        Arrays.sort(nums);
+        int left = 0, right = nums.length - 1; // Divide the search space into two halves by finding the middle index “mid”.
 
         while (left < right) {
             int mid = left + (right - left) / 2;
