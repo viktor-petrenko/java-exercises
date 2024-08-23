@@ -113,10 +113,11 @@ public class TR {
     }
 
     /*
-      ******
-      ***
-      **
-      *
+     *******
+      *****
+       ***
+        *
+
 
      */
     private static void upsidedownTree(int rows) {
@@ -138,10 +139,11 @@ public class TR {
     }
 
     /*
-      *
-      **
-      ***
+        *
+       ***
       *****
+     *******
+
      */
 
     private static void fullsizeTree(int rows) {
