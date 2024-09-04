@@ -18,14 +18,14 @@ public class MinMaxMatrix {
             }
         }
 
-        maxMatrixSum(array);
+        System.out.println(maxMatrixSum(array));
     }
 
     static int maxMatrixSum(int[][] matrix){
         int sum = 0, negativeCount = 0, min = 1_000_000_000;
-        for(int i = 0; i < matrix.length; i++){
-            for (int j = 0; j < matrix[i].length; j++){
-                int num = matrix[i][j];
+        for(int row = 0; row < matrix.length; row++){
+            for (int column = 0; column < matrix[row].length; column++){
+                int num = matrix[row][column];
                 sum += Math.abs(num);
                 if(num < 0) {
                     negativeCount++;
