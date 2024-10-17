@@ -1,6 +1,6 @@
 package queue;
 
-import misc.Person;
+import questions.Person;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

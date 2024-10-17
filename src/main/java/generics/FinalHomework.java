@@ -63,7 +63,7 @@ public class FinalHomework {
         }
     }
 
-    interface Algorithm {
+     interface Algorithm {
         void execute();
     }
 }

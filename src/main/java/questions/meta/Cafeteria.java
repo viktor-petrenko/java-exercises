@@ -1,4 +1,4 @@
-package misc.meta;
+package questions.meta;
 
 import java.util.Arrays;
 

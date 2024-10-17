@@ -1,7 +1,6 @@
-package misc.hired;
+package questions.hired;
 
 import java.util.Arrays;
-import java.util.TreeSet;
 
 /*
 We've provided a program that was designed to accomplish the following task, but doesn't work properly . Your task is to fix the bugs in this program so the tests pass.

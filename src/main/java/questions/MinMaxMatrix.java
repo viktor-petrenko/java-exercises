@@ -26,7 +26,7 @@ public class MinMaxMatrix {
         for(int row = 0; row < matrix.length; row++){
             for (int column = 0; column < matrix[row].length; column++){
                 int num = matrix[row][column];
-                sum += Math.abs(num);
+                 sum += Math.abs(num);
                 if(num < 0) {
                     negativeCount++;
                 }

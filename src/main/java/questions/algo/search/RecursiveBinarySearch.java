@@ -1,4 +1,4 @@
-package algo.search;
+package questions.algo.search;
 
 // Java implementation of recursive Binary Search
 class RecursiveBinarySearch {

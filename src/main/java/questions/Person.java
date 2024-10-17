@@ -1,4 +1,4 @@
-package misc;
+package questions;
 
 import com.google.common.base.Objects;
 

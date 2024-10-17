@@ -1,4 +1,4 @@
-package misc.meta;
+package questions.meta;
 
 public class GetWrongAnswers {
     public static void main(String[] args) {

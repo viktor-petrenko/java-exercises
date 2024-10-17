@@ -1,6 +1,5 @@
-package misc.hired;
+package questions.hired;
 
-import java.util.*;
 /*
 suppose you are given a list of integers prices that represents the proce of google's stock over time. prieces[i] is the price of the stock on day i. You must buy the stock once and then later sell it. You are not allowed to sell before you buy.
 

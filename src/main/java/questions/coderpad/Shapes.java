@@ -1,4 +1,4 @@
-package misc.coderpad;
+package questions.coderpad;
 
 public class Shapes {
 

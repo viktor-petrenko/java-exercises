@@ -1,4 +1,4 @@
-package algo.search;
+package questions.algo.search;
 
 import java.util.Arrays;
 
