@@ -165,10 +165,10 @@ public class TR {
     }
 
     /*
-     *
-     **
+       *
+      **
      ***
-
+    ****
      */
     private static void leftSideTree(int rows) {
 

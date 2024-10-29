@@ -19,7 +19,6 @@ public class NewtonCompany {
 
     public static List<String> getMaxAmountOfWordAppearence(List<String> list) {
         //add check for empty List
-
         HashMap<String, Integer> containerStorage = new HashMap<String, Integer>();
         for (String word : list) {
             //if empty values fouds remove
