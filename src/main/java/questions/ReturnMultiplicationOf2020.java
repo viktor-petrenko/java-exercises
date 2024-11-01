@@ -13,7 +13,7 @@ public class ReturnMultiplicationOf2020 {
     public static Integer find2020sum(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
-            for (int n = 0; i < list.size(); i++) {
+            for (int n = i; i < list.size(); i++) {
                 System.out.println("inner loop i '" + list.get(i) + "'");
                 System.out.println("inner loop n '" + list.get(n) + "'");
 

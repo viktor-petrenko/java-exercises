@@ -2,7 +2,6 @@ package questions.meta;
 
 public class GetWrongAnswers {
     public static void main(String[] args) {
-        // Write any import statements here
 
         System.out.println(getWrongAnswers(5, "AAAAA"));
 

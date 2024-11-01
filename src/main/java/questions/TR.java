@@ -75,11 +75,10 @@ public class TR {
 
 
     /*
-
-      ****
-       ***
-        **
-         *
+     ****
+     ***
+     **
+     *
     */
     private static void leftSideUpsideDownTree(int rows) {
         for (int i = rows; i >= 1; i--) { // Outer loop for the rows (reverse)
@@ -92,11 +91,10 @@ public class TR {
     }
 
     /*
-      ****
+     ****
       ***
-      **
-      *
-
+       **
+        *
      */
     private static void rightTreeUpSideDown(int rows) {
         for (int i = rows; i >= 1; i--) { // Outer loop for the rows (reverse)
