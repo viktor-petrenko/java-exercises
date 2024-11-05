@@ -5,10 +5,10 @@ public class Palendrom {
     public static void main(String[] args) {
         String text = "Toyota racecar is on level one, Honda civic is on level seven";
         reverseEachWordInTheString(text);
-        reverseOnlyPalendromes(text);
+        gatherOnlyPalendromes(text);
     }
 
-    private static void reverseOnlyPalendromes(String text) {
+    private static void gatherOnlyPalendromes(String text) {
         StringBuilder sb = new StringBuilder();
         for (String word : text.split(" ")) {
             if (isPalendrome(word)) {
