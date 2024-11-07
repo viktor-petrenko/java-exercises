@@ -6,7 +6,11 @@ import java.util.Map;
 public class LongestSubstringWithTwoDistinctChars {
 
     public static int getDistinctChar(String text) {
+        // This variable keeps track of the maximum length of any substring found that contains
+        // at most two distinct characters. It starts at 0.
         int maxLength = 0;
+       // This is the left pointer for our sliding window, initially set to 0.
+        // The window will expand and contract between left and right.
         int left = 0;
 
         Map<Character, Integer> charMap = new HashMap<>();
@@ -23,8 +27,9 @@ public class LongestSubstringWithTwoDistinctChars {
                 }
                 left++;
             }
-            System.out.println("maxLength: " + maxLength + " - right: " + right + " left: " + left + " +1 = "+ maxLength);
             maxLength = Math.max(maxLength, right - left + 1);
+            System.out.println("maxLength: " + maxLength + " - right: " + right + " left: " + left + " + 1 = "+ maxLength);
+
         }
 
         return maxLength;
