@@ -1,8 +1,8 @@
 package typicode;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import excercises.rest.typicode.clients.TypiCodeService;
-import excercises.rest.typicode.clients.pojos.EntityInformation;
+import exercises.rest.typicode.clients.TypiCodeService;
+import exercises.rest.typicode.clients.pojos.EntityInformation;
 import io.restassured.RestAssured;
 import io.restassured.config.ObjectMapperConfig;
 import io.restassured.config.RestAssuredConfig;
@@ -17,6 +17,7 @@ import static io.restassured.RestAssured.given;
 
 
 public class HappyPathTestTypicode {
+
     @Test()
     public void TestGetUsers() {
         for (EntityInformation entity : TypiCodeService.getUsersPlain()) {

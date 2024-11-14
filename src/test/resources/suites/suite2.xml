@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suite2.xml">
     <listeners>
-        <listener class-name="excercises.testng.SuiteListener"/>
+        <listener class-name="exercises.testng.SuiteListener"/>
     </listeners>
     <test name="Test2">
         <classes>
