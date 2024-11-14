@@ -1,4 +1,4 @@
-package excercises.other.wayToCompareModels;
+package excercises.rest.wayToCompareModels;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

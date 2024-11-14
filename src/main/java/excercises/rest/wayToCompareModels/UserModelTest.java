@@ -1,4 +1,4 @@
-package excercises.other.wayToCompareModels;
+package excercises.rest.wayToCompareModels;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

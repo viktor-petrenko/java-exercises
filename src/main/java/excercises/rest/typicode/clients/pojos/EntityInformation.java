@@ -1,4 +1,4 @@
-package excercises.other.typicode.clients.pojos;
+package excercises.rest.typicode.clients.pojos;
 
 public class EntityInformation {
     String id;

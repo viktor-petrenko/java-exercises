@@ -1,11 +1,11 @@
-package excercises.other.typicode.clients;
+package excercises.rest.typicode.clients;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.util.JacksonFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import excercises.other.typicode.clients.pojos.EntityInformation;
+import excercises.rest.typicode.clients.pojos.EntityInformation;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Invocation;

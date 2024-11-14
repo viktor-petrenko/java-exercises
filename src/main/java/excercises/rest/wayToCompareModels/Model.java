@@ -1,4 +1,4 @@
-package excercises.other.wayToCompareModels;
+package excercises.rest.wayToCompareModels;
 
 
 public class Model implements IModel {

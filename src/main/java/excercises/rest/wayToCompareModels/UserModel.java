@@ -1,4 +1,4 @@
-package excercises.other.wayToCompareModels;
+package excercises.rest.wayToCompareModels;
 
 public class UserModel extends Model {
     private Long id;
