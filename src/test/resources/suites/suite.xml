@@ -1,6 +1,6 @@
 <suite name="Suite of Suites">
     <listeners>
-        <listener class-name="excercises.other.SuiteListener"/>
+        <listener class-name="excercises.testng.SuiteListener"/>
     </listeners>
     <suite-files>
         <suite-file path="suite1.xml"/>

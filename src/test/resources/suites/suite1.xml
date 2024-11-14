@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suite1.xml" parallel="methods" thread-count="322">
     <listeners>
-        <listener class-name="excercises.other.SuiteListener"/>
+        <listener class-name="excercises.testng.SuiteListener"/>
     </listeners>
     <test name="Test1" parallel="methods"  thread-count="322">
         <classes>
