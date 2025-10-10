@@ -1,6 +1,6 @@
 package exercises.algos.questions;
 
-import java.io.*;
+import java.io.IOException;
 import java.util.*;
 
 public class FindSumAppearancesUnderScope {

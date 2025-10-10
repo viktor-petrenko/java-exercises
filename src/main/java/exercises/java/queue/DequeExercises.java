@@ -1,6 +1,7 @@
 package exercises.java.queue;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class DequeExercises {
     // double ended queue (DEQUE)

@@ -1,6 +1,5 @@
 package exercises.implementing_annotations.ignore_in_browser;
 
-import com.LocalDesiredCapabilities;
 import conf.TestProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +18,7 @@ public class SeleniumFixture {
 
   @BeforeClass
   public void startDriver() {
-    LocalDesiredCapabilities localDesiredCapabilities = new LocalDesiredCapabilities();
+    config.LocalDesiredCapabilities localDesiredCapabilities = new config.LocalDesiredCapabilities();
     File chromeDriver = new File("src/test/resources/drivers/chromedriver.exe");
     System.setProperty(TestProperties.CHROME_DRIVER, chromeDriver.getAbsolutePath());
                     /*try {

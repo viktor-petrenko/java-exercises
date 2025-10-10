@@ -2,6 +2,8 @@ package exercises.rest.wayToCompareModels;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import exercises.rest.wayToCompareModels.misc.ComparisonResult;
+import exercises.rest.wayToCompareModels.misc.Model;
 
 public class ModelJsonComparator {
 

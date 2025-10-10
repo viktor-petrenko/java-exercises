@@ -1,6 +1,6 @@
 package exercises.java.generics;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class FinalHomework {
 

@@ -7,52 +7,31 @@ import org.testng.asserts.SoftAssert;
 
 public class SoftHamcrestAssert extends SoftAssert {
 
-  public <T> void assertThat(final T actual, final Matcher<? super T> matcher) {
-    doAssert(new IAssert() {
-      @Override
-      public void doAssert() {
-        MatcherAssert.assertThat(actual, matcher);
-      }
+    public <T> void assertThat(final T actual, final Matcher<? super T> matcher) {
+        doAssert(new IAssert<T>() {
+            @Override public void doAssert() { MatcherAssert.assertThat(actual, matcher); }
+            @Override public T getActual() { return actual; }
 
-      @Override
-      public Object getActual() {
-        return actual;
-      }
+            @Override
+            public T getExpected() {
+                return null;
+            }
 
-      @Override
-      public Object getExpected() {
-        return null;
-      }
+            @Override public String getMessage() { return null; }
+        });
+    }
 
-      @Override
-      public String getMessage() {
-        return null;
-      }
-    });
-  }
+    public <T> void assertThat(final String reason, final T actual, final Matcher<? super T> matcher) {
+        doAssert(new IAssert<T>() {
+            @Override public void doAssert() { MatcherAssert.assertThat(reason, actual, matcher); }
+            @Override public T getActual() { return actual; }
 
-  public <T> void assertThat(final String reason, final T actual, final Matcher<? super T> matcher) {
-    doAssert(new IAssert() {
-      @Override
-      public void doAssert() {
-        MatcherAssert.assertThat(reason, actual, matcher);
-      }
+            @Override
+            public T getExpected() {
+                return null;
+            }
 
-      @Override
-      public Object getActual() {
-        return actual;
-      }
-
-      @Override
-      public Object getExpected() {
-        return null;
-      }
-
-      @Override
-      public String getMessage() {
-        return reason;
-      }
-    });
-  }
-
+            @Override public String getMessage() { return reason; }
+        });
+    }
 }

@@ -1,6 +1,7 @@
 package exercises.rest.wayToCompareModels;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import exercises.rest.wayToCompareModels.misc.ComparisonResult;
+import exercises.rest.wayToCompareModels.misc.UserModel;
 
 public class UserModelTest {
     public static void main(String[] args) {

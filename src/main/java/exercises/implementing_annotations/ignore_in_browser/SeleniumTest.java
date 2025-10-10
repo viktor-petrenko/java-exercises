@@ -2,7 +2,8 @@ package exercises.implementing_annotations.ignore_in_browser;
 
 import org.testng.annotations.Test;
 
-import static tests.testng.tricky2.sample31.IgnoreInBrowser.Browser.CHROME;
+import static exercises.implementing_annotations.ignore_in_browser.IgnoreInBrowser.Browser.CHROME;
+
 
 public class SeleniumTest extends SeleniumFixture {
 
