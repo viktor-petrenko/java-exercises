@@ -3,7 +3,7 @@ package exercises.algos.questions.coderpad;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DuoDigitChecker {
+public class FindTwoOrFewerUniqueNumbers {
     public static String isDuoDigit(int number) {
         String numberStr = Integer.toString(Math.abs(number));  // Convert to string, take absolute value to ignore negative sign
         Set<Character> uniqueDigits = new HashSet<>();  // Use a Set to store unique digits

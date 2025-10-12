@@ -1,4 +1,4 @@
-package exercises.algos.questions.coderpad;
+package exercises;
 
 public class Shapes {
 
