@@ -1,4 +1,4 @@
-package exercises.algos.questions.coderpad;
+package exercises;
 
 import java.util.Arrays;
 
